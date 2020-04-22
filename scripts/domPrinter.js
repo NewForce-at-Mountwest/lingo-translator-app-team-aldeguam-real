@@ -25,3 +25,26 @@ const h1 = (text, classNames) => {
 // }
 
 // const h1 = (text, classNames) => `<h1 class="${classNames}">${text}</h1>`
+
+
+///ADDED CLICK EVENTS FOR ALL LINKS IN THE NAV BAR
+document.querySelector("#french").addEventListener("click", function(){
+    console.log("click click")
+   
+    })
+   
+    document.querySelector("#spanish").addEventListener("click", function(){
+     console.log("click click click")
+    
+     })
+   
+     document.querySelector("#hindi").addEventListener("click", function(){
+       console.log("click ")
+      
+       })
+       
+   
+       document.querySelector(".navbar-brand").addEventListener("click", function(){
+         console.log("superclick its super clicky yeah")
+        
+         })
