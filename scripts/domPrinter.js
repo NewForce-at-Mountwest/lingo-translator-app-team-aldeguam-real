@@ -9,6 +9,7 @@ const h1 = (text, classNames) => {
     return `<h1 class="${classNames}">${text}</h1>`
 }
 
+
 // Go to french.js to see how we can execute this function
 
 
@@ -28,23 +29,20 @@ const h1 = (text, classNames) => {
 
 
 ///ADDED CLICK EVENTS FOR ALL LINKS IN THE NAV BAR
-document.querySelector("#french").addEventListener("click", function(){
-    console.log("click click")
-   
+document.querySelector("#spanish").addEventListener("click", function(){
+    console.log("click click click")
+    document.querySelector("#language-container").innerHTML = h1(spanishData.name, "spanish-heading")
     })
-   
-    document.querySelector("#spanish").addEventListener("click", function(){
-     console.log("click click click")
-    
-     })
-   
-     document.querySelector("#hindi").addEventListener("click", function(){
-       console.log("click ")
-      
-       })
-       
-   
-       document.querySelector(".navbar-brand").addEventListener("click", function(){
-         console.log("superclick its super clicky yeah")
-        
-         })
+
+    document.querySelector("#hindi").addEventListener("click", function(){
+      console.log("click ")
+      document.querySelector("#language-container").innerHTML = h1(hindiData.name, "hindi-heading")
+      })
+
+      document.querySelector(".navbar-brand").addEventListener("click", function(){
+        console.log("superclick its super clicky yeah")
+        })
+
+        document.querySelector("#french").addEventListener("click", function(){
+            console.log("click click click")
+            document.querySelector("#language-container").innerHTML = h1(frenchData.name, "french-heading")})
