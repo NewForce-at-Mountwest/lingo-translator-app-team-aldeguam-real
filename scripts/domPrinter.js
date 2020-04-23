@@ -47,6 +47,19 @@ const loopTest = (dataForLoop) => {
   return data
 }
 
+{/* <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+</div> */}
 
 ///ADDED CLICK EVENTS FOR ALL LINKS IN THE NAV BAR
 document.querySelector("#spanish").addEventListener("click", function(){
@@ -66,3 +79,4 @@ document.querySelector("#spanish").addEventListener("click", function(){
         document.querySelector("#french").addEventListener("click", function(){
             console.log("click click click")
             document.querySelector("#language-container").innerHTML = h1(frenchData.name, "french-heading")})
+
