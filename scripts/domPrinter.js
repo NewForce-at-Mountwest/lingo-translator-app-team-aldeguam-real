@@ -49,20 +49,41 @@ const loopTest = (dataForLoop) => {
 
 
 ///ADDED CLICK EVENTS FOR ALL LINKS IN THE NAV BAR
+
+//  document.querySelector(".navbar-brand").addEventListener("click", function(){
+//   console.log("superclick its super clicky yeah")
+//   document.querySelector("#homepage").innerHTML = `
+//   <h1>Welcome To Lingo</h1>
+//        <p>Click a Language to Begin!</p>
+  
+//   `
+ 
+//   })//
+
+
 document.querySelector("#spanish").addEventListener("click", function(){
     console.log("click click click")
     document.querySelector("#language-container").innerHTML = h1(spanishData.name, "spanish-heading")
     })
 
     document.querySelector("#hindi").addEventListener("click", function(){
-      console.log("click ")
       document.querySelector("#language-container").innerHTML = h1(hindiData.name, "hindi-heading")
-      })
+      
+    })
+    //  THIS MAKES THE SPLASH PAGE WORK
+
+    document.querySelector("#language-container").innerHTML =`
+     <h1 class="text-center" id="welcome">Welcome To Lingo </h1>
+     <p class="text-center"> Click a Language to Begin </P>
+    `
+ 
 // this will redirect to dashboard --
-      document.querySelector(".navbar-brand").addEventListener("click", function(){
-        console.log("superclick its super clicky yeah")
-        })
+      // document.querySelector(".navbar-brand").addEventListener("click", function(){
+      //   console.log("superclick its super clicky yeah")
+      //   })
 
         document.querySelector("#french").addEventListener("click", function(){
             console.log("click click click")
             document.querySelector("#language-container").innerHTML = h1(frenchData.name, "french-heading")})
+
+ 

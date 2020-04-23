@@ -58,5 +58,11 @@
     }
   };
 
-  document.querySelector("#language-container").innerHTML = h1(hindiData.name, "Hindi-heading")
+  let container2 = document.querySelector("#language-container")
+
+  document.querySelector("#hindi").addEventListener("click", function(){
+    container2.innerHTML += createCard("Notable People", loopTest(hindiData.notablePeople))
+    container2.innerHTML += createCard("Countries Spoken", loopTest(hindiData.countriesSpoken))
+    container2.innerHTML += createCard("Fun Facts"),loopTest((hindiData.funFacts))
+  })
 
