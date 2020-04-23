@@ -67,30 +67,20 @@ document.querySelector("#spanish").addEventListener("click", function(){
     })
 
     document.querySelector("#hindi").addEventListener("click", function(){
-      console.log("click ")
       document.querySelector("#language-container").innerHTML = h1(hindiData.name, "hindi-heading")
-      document.querySelector("#language-container").innerHTML +=`
-      <div>
-       <div class="card" style="width: 18rem;">
-            <div class="card-body">
-             <h5 class="card-title">Noteable People</h5>
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      `
-      })
-   
+      
+    })
     //  THIS MAKES THE SPLASH PAGE WORK
 
     document.querySelector("#language-container").innerHTML =`
-     <h1 class="text-center" >Welcome To Lingo </h1>
+     <h1 class="text-center" id="welcome">Welcome To Lingo </h1>
      <p class="text-center"> Click a Language to Begin </P>
     `
  
 // this will redirect to dashboard --
-      document.querySelector(".navbar-brand").addEventListener("click", function(){
-        console.log("superclick its super clicky yeah")
-        })
+      // document.querySelector(".navbar-brand").addEventListener("click", function(){
+      //   console.log("superclick its super clicky yeah")
+      //   })
 
         document.querySelector("#french").addEventListener("click", function(){
             console.log("click click click")
