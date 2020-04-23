@@ -23,7 +23,7 @@ const spanishData = {
       "Equador",
       "El Salvador",
       "Equatorial Guinea",
-      "Guetemala",
+      "Guatemala",
       "Honduras",
       "Mexico",
       "Nicaragua",
@@ -47,9 +47,19 @@ const spanishData = {
     }
   };
 
+  // let container2 = document.querySelector("#language-container")
+
+  // document.querySelector("#hindi").addEventListener("click", function(){
+  //   container2.innerHTML = h1(hindiData.name, "hindi-heading")
+  //   container2.innerHTML += createCard("Notable People", loopTest(hindiData.notablePeople))
+  //   container2.innerHTML += createCard("Countries Spoken", loopTest(hindiData.countriesSpoken))
+  //   container2.innerHTML += createCard("Fun Facts"),loopTest((hindiData.funFacts))
+
   let container3 = document.querySelector("#language-container")
 
 document.querySelector("#spanish").addEventListener("click", function(){
+  container3.innerHTML = h1(spanishData.name, "spanish-heading")
   container3.innerHTML += createCard("Notable People", loopTest(spanishData.notablePeople))
   container3.innerHTML += createCard("Countries Spoken", loopTest(spanishData.countriesSpoken))
+  container3.innerHTML += createCard("Fun Facts"),loopTest((spanishData.funFacts))
 })
