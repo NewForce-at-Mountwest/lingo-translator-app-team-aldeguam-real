@@ -28,6 +28,26 @@ const h1 = (text, classNames) => {
 // const h1 = (text, classNames) => `<h1 class="${classNames}">${text}</h1>`
 
 
+// card function
+const createCard = (title, descriptiveText) => {
+  return`
+<div class="card" style="width: 18rem;"> 
+  <div class="card-body">
+    <h5 class="card-title">${title}</h5>
+    <p class="card-text">${descriptiveText}</p>
+  </div>
+</div>`
+}
+
+const loopTest = (dataForLoop) => {
+  let data = ""
+  for (i =0; i < dataForLoop.length; i++) {
+    data += `${dataForLoop[i]} <br>`
+  }
+  return data
+}
+
+
 ///ADDED CLICK EVENTS FOR ALL LINKS IN THE NAV BAR
 document.querySelector("#spanish").addEventListener("click", function(){
     console.log("click click click")
@@ -38,7 +58,7 @@ document.querySelector("#spanish").addEventListener("click", function(){
       console.log("click ")
       document.querySelector("#language-container").innerHTML = h1(hindiData.name, "hindi-heading")
       })
-
+// this will redirect to dashboard --
       document.querySelector(".navbar-brand").addEventListener("click", function(){
         console.log("superclick its super clicky yeah")
         })
