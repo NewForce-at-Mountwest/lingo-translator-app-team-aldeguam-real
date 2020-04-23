@@ -45,4 +45,5 @@ document.querySelector("#spanish").addEventListener("click", function(){
 
         document.querySelector("#french").addEventListener("click", function(){
             console.log("click click click")
-            document.querySelector("#language-container").innerHTML = h1(frenchData.name, "french-heading")})
+            document.querySelector("#language-container").innerHTML = h1(frenchData.name, "french-heading")
+        })
