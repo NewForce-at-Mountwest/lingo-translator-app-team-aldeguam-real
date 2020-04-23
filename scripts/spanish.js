@@ -47,3 +47,9 @@ const spanishData = {
     }
   };
 
+  let container = document.querySelector("#language-container")
+
+  document.querySelector("#spanish").addEventListener("click", function(){
+    container.innerHTML += createCard("Notable People", loopTest(spanishData.notablePeople))
+    container.innerHTML += createCard("Countries Spoken", loopTest(spanishData.countriesSpoken))
+  })
