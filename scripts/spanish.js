@@ -46,4 +46,8 @@ const spanishData = {
       whatsYourName: "cuál es tu nombre?"
     }
   };
+const container3 = document.querySelector("#language-container")
 
+  document.querySelector("#spanish").addEventListener("click", function(){
+    console.log("click click click")
+    container3.innerHTML = h1(spanishData.name, "spanish-heading")})
