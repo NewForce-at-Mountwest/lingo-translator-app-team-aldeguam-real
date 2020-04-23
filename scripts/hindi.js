@@ -64,6 +64,6 @@
     container2.innerHTML = h1(hindiData.name, "hindi-heading")
     container2.innerHTML += createCard("Notable People", loopTest(hindiData.notablePeople))
     container2.innerHTML += createCard("Countries Spoken", loopTest(hindiData.countriesSpoken))
-    container2.innerHTML += createCard("Fun Facts"),loopTest((hindiData.funFacts))
+    container2.innerHTML += createCard("Fun Facts", hindiFunFacts(hindiData.funFacts.relatedLanguages, "Related Languages:", "Letters in Alphabet", hindiData.funFacts.lettersInAlphabet, "Number of Speakers World Wide", hindiData.funFacts.numberOfSpeakers))
   })
 

@@ -51,7 +51,10 @@ let container = document.querySelector("#language-container")
 document.querySelector("#french").addEventListener("click", function(){
   console.log("hello, world")
   container.innerHTML = h1(frenchData.name, "french-heading")
-  container.innerHTML += createCard("Notable People", loopTest(frenchData.notablePeople))
-  container.innerHTML += createCard("Countries Spoken", loopTest(frenchData.countriesSpoken))
-  container.innerHTML += createCard("Fun Facts", loopFunFacts(frenchData.funFacts.relatedLanguages, "Related Languages:", "Letters in Alphabet", frenchData.funFacts.lettersInAlphabet, "Number of Speakers World Wide", frenchData.funFacts.numberOfSpeakers))
+  container.innerHTML += `<div class="row">
+   ${createCard("Notable People", loopTest(frenchData.notablePeople))}
+   ${createCard("Countries Spoken", loopTest(frenchData.countriesSpoken))}
+  ${createCard("Fun Facts", loopFunFacts(frenchData.funFacts.relatedLanguages, "Related Languages:", "Letters in Alphabet", frenchData.funFacts.lettersInAlphabet, "Number of Speakers Worldwide", frenchData.funFacts.numberOfSpeakers))}
+   </div>`
+ 
 })
