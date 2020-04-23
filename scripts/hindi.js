@@ -58,5 +58,5 @@
     }
   };
 
-  document.querySelector("#language-container").innerHTML = h1(hindiData.name, "Hindi-heading")
+ 
 
