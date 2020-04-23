@@ -52,13 +52,63 @@ const frenchData = {
 // This line of code calls the h1 function defined in domPrinter.js and passes in the text (the name property in the above object) and a class name of "french-heading", which currently has no applied CSS so we won't see a difference
 // document.querySelector("#language-container").innerHTML = h1(frenchData.name, "french-heading")
 
+// const loopFunFacts = (dataForLoop, title) => {
+//   let data = ""
+//   for (i =0; i < dataForLoop.length; i++) {
+//     data += `<li>${dataForLoop[i]} </li>`
+//   }
+//   return `<h6>${title}</h6>
+//   <ul>${data}</ul>`
+// }
+
+// const loopFunFacts = (dataForLoop, title, ) => {
+//   let data = ""
+//   for (i =0; i < dataForLoop.length; i++) {
+//     data += `<li>${dataForLoop[i]} </li>`
+//   }
+//   return `<h6>${title}</h6>
+//   <ul>${data}</ul>
+//   <h6>Letters in Alphabet:</h6><p>26</p>
+//   <h6>Number of Speakers Worldwide:</h6><p>300 million</p>
+//   `
+// }
+
+const loopFunFacts = (dataForLoop, title, letters, numberLetters, speakers, numberSpeakers) => {
+  let data = ""
+  for (i =0; i < dataForLoop.length; i++) {
+    data += `<li>${dataForLoop[i]} </li>`
+  }
+  return `<h6>${title}</h6>
+  <ul>${data}</ul>
+  <h6>${letters}:</h6><p>${numberLetters}</p>
+  <h6>${speakers}:</h6><p>${numberSpeakers}</p>
+  `
+}
+// const createCard2 = (title, descriptiveText) => {
+//   return`
+// <div class="card" style="width: 18rem;"> 
+//   <div class="card-body">
+//     <h4 class="card-title">${title}</h4>
+//     <p class="card-text">${descriptiveText}</p>
+//   </div>
+// </div>`
+// }
 
 let container = document.querySelector("#language-container")
 
 document.querySelector("#french").addEventListener("click", function(){
   container.innerHTML += createCard("Notable People", loopTest(frenchData.notablePeople))
   container.innerHTML += createCard("Countries Spoken", loopTest(frenchData.countriesSpoken))
+  container.innerHTML += createCard("Fun Facts", loopFunFacts(frenchData.funFacts.relatedLanguages, "Related Languages:", "Letters in Alphabet", frenchData.funFacts.lettersInAlphabet, "Number of Speakers World Wide", frenchData.funFacts.numberOfSpeakers))
 })
+
+
+// funFacts: {
+//   relatedLanguages: ["Latin", "Spanish", "Italian"],
+//   lettersInAlphabet: 26,
+//   numberOfSpeakers: "about 300 million"
+// },
+
 
 // document.querySelector("#french").addEventListener("click", function (){
 //   document.querySelector("#language-container").innerHTML += createCard("Countries Spoken", loopTest(frenchData.countriesSpoken))

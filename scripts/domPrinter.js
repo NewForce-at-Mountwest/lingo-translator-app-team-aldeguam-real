@@ -33,7 +33,7 @@ const createCard = (title, descriptiveText) => {
   return`
 <div class="card" style="width: 18rem;"> 
   <div class="card-body">
-    <h5 class="card-title">${title}</h5>
+    <h4 class="card-title">${title}</h4>
     <p class="card-text">${descriptiveText}</p>
   </div>
 </div>`
@@ -47,6 +47,16 @@ const loopTest = (dataForLoop) => {
   return data
 }
 
+const loopFunFacts = (dataForLoop, title, letters, numberLetters, speakers, numberSpeakers) => {
+  let data = ""
+  for (i =0; i < dataForLoop.length; i++) {
+    data += `<li>${dataForLoop[i]} </li>`}
+  return `<h6>${title}</h6>
+  <ul>${data}</ul>
+  <h6>${letters}:</h6><p>${numberLetters}</p>
+  <h6>${speakers}:</h6><p>${numberSpeakers}</p>
+  `
+}
 
 ///ADDED CLICK EVENTS FOR ALL LINKS IN THE NAV BAR
 document.querySelector("#spanish").addEventListener("click", function(){
