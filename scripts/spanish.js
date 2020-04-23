@@ -46,6 +46,7 @@ const spanishData = {
       whatsYourName: "cuál es tu nombre?"
     }
   };
+// const container3 = document.querySelector("#language-container")
 
   // let container2 = document.querySelector("#language-container")
 

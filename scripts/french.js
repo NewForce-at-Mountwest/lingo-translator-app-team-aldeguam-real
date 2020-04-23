@@ -46,48 +46,12 @@ const frenchData = {
     whatsYourName: "Comment tu t’appelles?"
   }
 };
-
-// Note: this will print on page load. You will need to refactor this code slightly so that it only prints when you click the "French" button on the nav bar
-
-// This line of code calls the h1 function defined in domPrinter.js and passes in the text (the name property in the above object) and a class name of "french-heading", which currently has no applied CSS so we won't see a difference
-// document.querySelector("#language-container").innerHTML = h1(frenchData.name, "french-heading")
-
-
 let container = document.querySelector("#language-container")
 
 document.querySelector("#french").addEventListener("click", function(){
+  console.log("hello, world")
+  container.innerHTML = h1(frenchData.name, "french-heading")
   container.innerHTML += createCard("Notable People", loopTest(frenchData.notablePeople))
   container.innerHTML += createCard("Countries Spoken", loopTest(frenchData.countriesSpoken))
+  container.innerHTML += createCard("Fun Facts", loopFunFacts(frenchData.funFacts.relatedLanguages, "Related Languages:", "Letters in Alphabet", frenchData.funFacts.lettersInAlphabet, "Number of Speakers World Wide", frenchData.funFacts.numberOfSpeakers))
 })
-
-// document.querySelector("#french").addEventListener("click", function (){
-//   document.querySelector("#language-container").innerHTML += createCard("Countries Spoken", loopTest(frenchData.countriesSpoken))
-// })
-
- // Build the list of things to go in the card (notable people)
-  // const listOfPeople = loopTest(frenchData.notablePeople)
-  // console.log(listOfPeople)
-
-  // // Build card using list of things we built in step 1
-  // const famousPeopleCard = createCard("Famous People", listOfPeople)
-  // console.log(famousPeopleCard)
-  // // Print card to DOM
-  // document.querySelector("#language-container").innerHTML += famousPeopleCard;
-
-  // document.querySelector("#language-container").innerHTML += createCard("Notable People", loopTest(frenchData.notablePeople)) 
-
-  // const loop = () => {
-//   let notables = ""
-// for (i = 0; i < frenchData.notablePeople.length; i++){
-//   notables += `${frenchData.notablePeople[i]} <br>`
-// }
-// return notables
-// }
-
-// const loop1 = () => {
-//   let countries = ""
-// for (i = 0; i < frenchData.countriesSpoken.length; i++){
-//     countries += `${frenchData.countriesSpoken[i]} <br>`
-//   }
-//   return countries
-// }
