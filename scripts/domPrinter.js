@@ -1,26 +1,21 @@
-
-// FUNCTION THAT DEFINES THE H1 ELEMENT
+//title pages 
 const h1 = (text, classNames) => {
     return `<h1 class="${classNames}">${text}</h1>`
 }
 
 
-
-
-
-// CARD CREATOR FUCNTION
+// card function
 const createCard = (title, descriptiveText) => {
   return`
 <div class="card" style="width: 18rem;"> 
   <div class="card-body">
-    <h5 class="card-title">${title}</h5>
+    <h4 class="card-title">${title}</h4>
     <p class="card-text">${descriptiveText}</p>
   </div>
 </div>`
 }
 
-
-//LOOP THAT GOES THROUGH THE DATA FOR Countries Spoken 
+// loop for cards
 const loopTest = (dataForLoop) => {
   let data = ""
   for (i =0; i < dataForLoop.length; i++) {
@@ -29,6 +24,17 @@ const loopTest = (dataForLoop) => {
   return data
 }
 
+// loop for fun facts card *specifically*
+const loopFunFacts = (dataForLoop, title, letters, numberLetters, speakers, numberSpeakers) => {
+  let data = ""
+  for (i =0; i < dataForLoop.length; i++) {
+    data += `<li>${dataForLoop[i]} </li>`}
+  return `<h6>${title}</h6>
+  <ul>${data}</ul>
+  <h6>${letters}:</h6><p>${numberLetters}</p>
+  <h6>${speakers}:</h6><p>${numberSpeakers}</p>
+  `
+}
 
 
     //  THIS MAKES THE SPLASH PAGE WORK BY PRINTING TO THE DOM
