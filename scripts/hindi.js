@@ -57,7 +57,16 @@
     }
     }
   };
+ 
 
+  // PRINTS HINDI HEADING TO THE DOM
+  document.querySelector("#hindi").addEventListener("click", function(){
+    console.log("click click click")
+    document.querySelector("#language-container").innerHTML = h1(hindiData.name, "hindi-heading")})
+
+
+
+//CALLS THE FRENCH FUNCTIONS
   let container2 = document.querySelector("#language-container")
 
   document.querySelector("#hindi").addEventListener("click", function(){

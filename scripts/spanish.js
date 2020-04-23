@@ -47,3 +47,10 @@ const spanishData = {
     }
   };
 
+
+  //PRINTS SPANISH HEADING TO THE DOM
+document.querySelector("#spanish").addEventListener("click", function(){
+  console.log("click click click")
+  document.querySelector("#language-container").innerHTML = h1(spanishData.name, "spanish-heading")
+  })
+
