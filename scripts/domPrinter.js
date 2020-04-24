@@ -1,39 +1,48 @@
 //title pages 
 const h1 = (text, classNames) => {
-    return `<h1 class="${classNames}">${text}</h1>`
+  return `<h1 class="${classNames}">${text}</h1>`
 }
 
 
 // card function
 const createCard = (title, descriptiveText) => {
+<<<<<<< HEAD
   return`
 <div class="card m-3 p-2 col-sm" style="width: 18rem;"> 
   <div class="card-body">
     <h4 class="card-title">${title}</h4>
     <p class="card-text">${descriptiveText}</p>
   </div>
+=======
+return`
+<div class="card" style="width: 18rem;"> 
+<div class="card-body">
+  <h4 class="card-title">${title}</h4>
+  <p class="card-text">${descriptiveText}</p>
+</div>
+>>>>>>> master
 </div>`
 }
 
 // loop for cards
 const loopTest = (dataForLoop) => {
-  let data = ""
-  for (i =0; i < dataForLoop.length; i++) {
-    data += `${dataForLoop[i]} <br>`
-  }
-  return data
+let data = ""
+for (i =0; i < dataForLoop.length; i++) {
+  data += `${dataForLoop[i]} <br>`
+}
+return data
 }
 
 // loop for fun facts card *specifically*
 const loopFunFacts = (dataForLoop, title, letters, numberLetters, speakers, numberSpeakers) => {
-  let data = ""
-  for (i =0; i < dataForLoop.length; i++) {
-    data += `<li>${dataForLoop[i]} </li>`}
-  return `<h6>${title}</h6>
-  <ul>${data}</ul>
-  <h6>${letters}:</h6><p>${numberLetters}</p>
-  <h6>${speakers}:</h6><p>${numberSpeakers}</p>
-  `
+let data = ""
+for (i =0; i < dataForLoop.length; i++) {
+  data += `<li>${dataForLoop[i]} </li>`}
+return `<h6>${title}</h6>
+<ul>${data}</ul>
+<h6>${letters}:</h6><p>${numberLetters}</p>
+<h6>${speakers}:</h6><p>${numberSpeakers}</p>
+`
 }
 
 const hindiFunFacts = (languages, title, letters, numberLetters, speakers, numberSpeakers) => {
@@ -53,25 +62,22 @@ const hindiFunFacts = (languages, title, letters, numberLetters, speakers, numbe
 //   document.querySelector("#homepage").innerHTML = `
 //   <h1>Welcome To Lingo</h1>
 //        <p>Click a Language to Begin!</p>
-  
+
 //   `
- 
+
 //   })//
 
 
 
-   //  THIS MAKES THE SPLASH PAGE WORK
+ //  THIS MAKES THE SPLASH PAGE WORK
+
+  document.querySelector("#language-container").innerHTML =`
+   <h1 class="text-center" id="welcome">Welcome To Lingo </h1>
+   <p class="text-center"> Click a Language to Begin </P>
+  `
 
     document.querySelector("#language-container").innerHTML =`
    
      <h1 class="text-center" id="welcome">Welcome To Lingo </h1>
      <p class="text-center"> Click a Language to Begin </P>
     `
- 
-// this will redirect to dashboard --
-      // document.querySelector(".navbar-brand").addEventListener("click", function(){
-      //   console.log("superclick its super clicky yeah")
-      //   })
-
-    
-      // <img src="https://quotefancy.com/media/wallpaper/3840x2160/10521-Leonardo-da-Vinci-Quote-Learning-is-the-only-thing-the-mind-never.jpg" alt="davinci-quote">
