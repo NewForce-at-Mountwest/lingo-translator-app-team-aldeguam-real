@@ -46,6 +46,8 @@ const frenchData = {
     whatsYourName: "Comment tu t’appelles?"
   }
 };
+
+//THIS CALLS THE 
 let container = document.querySelector("#language-container")
 
 document.querySelector("#french").addEventListener("click", function(){

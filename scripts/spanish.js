@@ -63,8 +63,4 @@ document.querySelector("#spanish").addEventListener("click", function(){
   container3.innerHTML += createCard("Fun Facts", loopFunFacts(spanishData.funFacts.relatedLanguages, "Related Languages:", "Letters in Alphabet", spanishData.funFacts.lettersInAlphabet, "Number of Speakers World Wide", spanishData.funFacts.numberOfSpeakers))
 })
 
-// const container3 = document.querySelector("#language-container")
 
-//   document.querySelector("#spanish").addEventListener("click", function(){
-//     console.log("click click click")
-//     container3.innerHTML = h1(spanishData.name, "spanish-heading")})

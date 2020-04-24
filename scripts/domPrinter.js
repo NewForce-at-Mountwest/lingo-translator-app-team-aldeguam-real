@@ -1,6 +1,7 @@
-//title pages 
+//THIS PRINTS THE TITLE ON EACH PAGE 
 const h1 = (text, classNames) => {
-  return `<h1 class="${classNames}">${text}</h1>`
+  //THIS STORES THE PARAMATERS OF TEXT AND CLASS NAME THE VARIABLE OF H1
+    return `<h1 class="${classNames}">${text}</h1>`
 }
 
 
@@ -35,6 +36,7 @@ return `<h6>${title}</h6>
 `
 }
 
+<<<<<<< HEAD
 const hindiFunFacts = (languages, title, letters, numberLetters, speakers, numberSpeakers) => {
   return `
   <h6>${title}</h6>
@@ -58,15 +60,18 @@ const translator = (enteredWord, btnID, translate, pID, translation) => {
 //   <p id="${pID}">${translation}</p>`
 // }
 ///ADDED CLICK EVENTS FOR ALL LINKS IN THE NAV BAR
+=======
+>>>>>>> master
 
-//  document.querySelector(".navbar-brand").addEventListener("click", function(){
-//   console.log("superclick its super clicky yeah")
-//   document.querySelector("#homepage").innerHTML = `
-//   <h1>Welcome To Lingo</h1>
-//        <p>Click a Language to Begin!</p>
+    //  PRINTS THE SPLASH PAGE TO THE DOM
+    document.querySelector("#language-container").innerHTML =`
+     <h1 class="text-center" id="welcome">Welcome To Lingo </h1>
+     <p class="text-center"> Click a Language to Begin </P>
+    `
+ 
 
-//   `
 
+<<<<<<< HEAD
 //   })//
 
 
@@ -83,3 +88,6 @@ const translator = (enteredWord, btnID, translate, pID, translation) => {
      <h1 class="text-center" id="welcome">Welcome To Lingo </h1>
      <p class="text-center"> Click a Language to Begin </P>
     `
+=======
+ 
+>>>>>>> master
