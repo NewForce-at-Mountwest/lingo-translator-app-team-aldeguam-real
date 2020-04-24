@@ -1,6 +1,6 @@
 //THIS PRINTS THE TITLE ON EACH PAGE 
 const h1 = (text, classNames) => {
-  //THIS STORES THE PARAMATERS OF TEXT AND CLASS NAME THE VARIABLE OF H1
+  //THIS STORES THE PARAMETERS OF TEXT AND CLASS NAME THE VARIABLE OF H1
     return `<h1 class="${classNames}">${text}</h1>`
 }
 
@@ -36,7 +36,6 @@ return `<h6>${title}</h6>
 `
 }
 
-<<<<<<< HEAD
 const hindiFunFacts = (languages, title, letters, numberLetters, speakers, numberSpeakers) => {
   return `
   <h6>${title}</h6>
@@ -46,22 +45,18 @@ const hindiFunFacts = (languages, title, letters, numberLetters, speakers, numbe
   `
 }
 
-const translator = (enteredWord, btnID, translate, pID, translation) => {
+const createTranslator = (inputID, btnID) => {
   return `
-  <textarea>${enteredWord}</textarea>
-  <button id="${btnID}">${translate}</button>
-  <p id="${pID}">${translation}</p>`
+  <fieldset>
+  <form action="">
+  <input id=${inputID} placeholer="Enter word here"></input>
+  <text></text>
+  </form>
+  <button id=${btnID}>Translate</button>
+  </fieldset>`
 }
 
-// const translator = (enteredWord, btnID, translate, pID, translation) => {
-//   return `
-//   <textarea>${enteredWord}</textarea>
-//   <button id="${btnID}">${translate}</button>
-//   <p id="${pID}">${translation}</p>`
-// }
 ///ADDED CLICK EVENTS FOR ALL LINKS IN THE NAV BAR
-=======
->>>>>>> master
 
     //  PRINTS THE SPLASH PAGE TO THE DOM
     document.querySelector("#language-container").innerHTML =`
@@ -71,7 +66,6 @@ const translator = (enteredWord, btnID, translate, pID, translation) => {
  
 
 
-<<<<<<< HEAD
 //   })//
 
 
@@ -88,6 +82,4 @@ const translator = (enteredWord, btnID, translate, pID, translation) => {
      <h1 class="text-center" id="welcome">Welcome To Lingo </h1>
      <p class="text-center"> Click a Language to Begin </P>
     `
-=======
  
->>>>>>> master
