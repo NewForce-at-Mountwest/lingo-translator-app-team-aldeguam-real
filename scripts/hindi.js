@@ -81,10 +81,10 @@
 
 
 //FUNCTION FOR HINDI FUN FACTS
-const hindiFunFacts = (title, lang, letters, numberLetters, speakers, numberSpeakers) =>{
- return  `<h6>${title}</h6>
-  <p>${lang}</p>
-  <h6>${letters}:</h6><p>${numberLetters}</p>
-  <h6>${speakers}:</h6><p>${numberSpeakers}</p>`}
+// const hindiFunFacts = (title, lang, letters, numberLetters, speakers, numberSpeakers) =>{
+//  return  `<h6>${title}</h6>
+//   <p>${lang}</p>
+//   <h6>${letters}:</h6><p>${numberLetters}</p>
+//   <h6>${speakers}:</h6><p>${numberSpeakers}</p>`}
 
  
