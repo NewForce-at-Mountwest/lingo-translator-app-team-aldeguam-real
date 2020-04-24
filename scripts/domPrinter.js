@@ -6,22 +6,12 @@ const h1 = (text, classNames) => {
 
 // card function
 const createCard = (title, descriptiveText) => {
-<<<<<<< HEAD
   return`
 <div class="card m-3 p-2 col-sm" style="width: 18rem;"> 
   <div class="card-body">
     <h4 class="card-title">${title}</h4>
     <p class="card-text">${descriptiveText}</p>
-  </div>
-=======
-return`
-<div class="card" style="width: 18rem;"> 
-<div class="card-body">
-  <h4 class="card-title">${title}</h4>
-  <p class="card-text">${descriptiveText}</p>
-</div>
->>>>>>> master
-</div>`
+  </div>`
 }
 
 // loop for cards
@@ -54,7 +44,19 @@ const hindiFunFacts = (languages, title, letters, numberLetters, speakers, numbe
   `
 }
 
+const translator = (enteredWord, btnID, translate, pID, translation) => {
+  return `
+  <textarea>${enteredWord}</textarea>
+  <button id="${btnID}">${translate}</button>
+  <p id="${pID}">${translation}</p>`
+}
 
+// const translator = (enteredWord, btnID, translate, pID, translation) => {
+//   return `
+//   <textarea>${enteredWord}</textarea>
+//   <button id="${btnID}">${translate}</button>
+//   <p id="${pID}">${translation}</p>`
+// }
 ///ADDED CLICK EVENTS FOR ALL LINKS IN THE NAV BAR
 
 //  document.querySelector(".navbar-brand").addEventListener("click", function(){

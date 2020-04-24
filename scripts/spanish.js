@@ -57,10 +57,10 @@ let container3 = document.querySelector("#language-container")
 
 document.querySelector("#spanish").addEventListener("click", function(){
   console.log("hello, world") 
-  container.innerHTML = h1(spanishData.name, "spanish-heading")
-  container.innerHTML += createCard("Notable People", loopTest(spanishData.notablePeople))
-  container.innerHTML += createCard("Countries Spoken", loopTest(spanishData.countriesSpoken))
-  container.innerHTML += createCard("Fun Facts", loopFunFacts(spanishData.funFacts.relatedLanguages, "Related Languages:", "Letters in Alphabet", spanishData.funFacts.lettersInAlphabet, "Number of Speakers World Wide", spanishData.funFacts.numberOfSpeakers))
+  container3.innerHTML = h1(spanishData.name, "spanish-heading")
+  container3.innerHTML += createCard("Notable People", loopTest(spanishData.notablePeople))
+  container3.innerHTML += createCard("Countries Spoken", loopTest(spanishData.countriesSpoken))
+  container3.innerHTML += createCard("Fun Facts", loopFunFacts(spanishData.funFacts.relatedLanguages, "Related Languages:", "Letters in Alphabet", spanishData.funFacts.lettersInAlphabet, "Number of Speakers World Wide", spanishData.funFacts.numberOfSpeakers))
 })
 
 // const container3 = document.querySelector("#language-container")
