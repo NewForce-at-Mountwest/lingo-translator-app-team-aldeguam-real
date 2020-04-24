@@ -1,5 +1,6 @@
-//title pages 
+//THIS PRINTS THE TITLE ON EACH PAGE 
 const h1 = (text, classNames) => {
+  //THIS STORES THE PARAMATERS OF TEXT AND CLASS NAME THE VARIABLE OF H1
     return `<h1 class="${classNames}">${text}</h1>`
 }
 
@@ -37,7 +38,7 @@ const loopFunFacts = (dataForLoop, title, letters, numberLetters, speakers, numb
 }
 
 
-    //  THIS MAKES THE SPLASH PAGE WORK BY PRINTING TO THE DOM
+    //  PRINTS THE SPLASH PAGE TO THE DOM
     document.querySelector("#language-container").innerHTML =`
      <h1 class="text-center" id="welcome">Welcome To Lingo </h1>
      <p class="text-center"> Click a Language to Begin </P>
