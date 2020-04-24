@@ -7,34 +7,34 @@ const h1 = (text, classNames) => {
 
 // card function
 const createCard = (title, descriptiveText) => {
-  return`
+return`
 <div class="card" style="width: 18rem;"> 
-  <div class="card-body">
-    <h4 class="card-title">${title}</h4>
-    <p class="card-text">${descriptiveText}</p>
-  </div>
+<div class="card-body">
+  <h4 class="card-title">${title}</h4>
+  <p class="card-text">${descriptiveText}</p>
+</div>
 </div>`
 }
 
 // loop for cards
 const loopTest = (dataForLoop) => {
-  let data = ""
-  for (i =0; i < dataForLoop.length; i++) {
-    data += `${dataForLoop[i]} <br>`
-  }
-  return data
+let data = ""
+for (i =0; i < dataForLoop.length; i++) {
+  data += `${dataForLoop[i]} <br>`
+}
+return data
 }
 
 // loop for fun facts card *specifically*
 const loopFunFacts = (dataForLoop, title, letters, numberLetters, speakers, numberSpeakers) => {
-  let data = ""
-  for (i =0; i < dataForLoop.length; i++) {
-    data += `<li>${dataForLoop[i]} </li>`}
-  return `<h6>${title}</h6>
-  <ul>${data}</ul>
-  <h6>${letters}:</h6><p>${numberLetters}</p>
-  <h6>${speakers}:</h6><p>${numberSpeakers}</p>
-  `
+let data = ""
+for (i =0; i < dataForLoop.length; i++) {
+  data += `<li>${dataForLoop[i]} </li>`}
+return `<h6>${title}</h6>
+<ul>${data}</ul>
+<h6>${letters}:</h6><p>${numberLetters}</p>
+<h6>${speakers}:</h6><p>${numberSpeakers}</p>
+`
 }
 
 
