@@ -58,3 +58,8 @@ document.querySelector("#french").addEventListener("click", function(){
    </div>`
  
 })
+
+// When a user clicks on a link in the nav bar, they should see that language's information displayed on the web page.
+// All of the information you need to display is stored in objects in your individual language JavaScript files
+// Users should see a section at the bottom of each page for a translator. The section should have an text input and a button that says "Translate".
+// When the user enters a phrase and clicks the "Translate" button, they should see either the translated phrase from the appropriate language's dictionary or, if the entered phrase is not in the dictionary, a helpful error message.
