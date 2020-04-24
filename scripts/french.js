@@ -46,6 +46,8 @@ const frenchData = {
     whatsYourName: "Comment tu t’appelles?"
   }
 };
+
+//THIS CALLS THE 
 let container = document.querySelector("#language-container")
 
 document.querySelector("#french").addEventListener("click", function(){
@@ -55,3 +57,5 @@ document.querySelector("#french").addEventListener("click", function(){
   container.innerHTML += createCard("Countries Spoken", loopTest(frenchData.countriesSpoken))
   container.innerHTML += createCard("Fun Facts", loopFunFacts(frenchData.funFacts.relatedLanguages, "Related Languages:", "Letters in Alphabet", frenchData.funFacts.lettersInAlphabet, "Number of Speakers World Wide", frenchData.funFacts.numberOfSpeakers))
 })
+
+
