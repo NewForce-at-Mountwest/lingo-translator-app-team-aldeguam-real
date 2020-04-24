@@ -73,12 +73,14 @@ document.querySelector("#french").addEventListener("click", function () {
 
 let frenchBtn = "french-btn"
 let frenchInput = "#french-input"
-document.querySelector("body").addEventListener("click", function (langSpecificBtn, langSpecificInput) {
+document.querySelector("body").addEventListener("click", function () {
   console.log("this should be something", event.target.id);
   if (event.target.id === frenchBtn) {
     console.log("clickety click clack click");
-    if (document.querySelector(frenchInput).value === "Hello" || document.querySelector(frenchInput).value === "hello") {
+    if (document.querySelector(frenchInput).value.toLowerCase() === "hello") {
       console.log(frenchData.dictionary.hello);
+    } else if (document.querySelector(frenchInput).value.toLowerCase() === "thank you"){
+      console.log(frenchData.dictionary.thankYou)
     }
   }
 }
