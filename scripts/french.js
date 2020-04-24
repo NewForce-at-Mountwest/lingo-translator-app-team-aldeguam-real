@@ -70,16 +70,16 @@ document.querySelector("#french").addEventListener("click", function () {
   container.innerHTML += createTranslator("french-input", "french-btn");
 });
 
-document.querySelector("body").addEventListener("click", function () {
+
+let frenchBtn = "french-btn"
+let frenchInput = "#french-input"
+document.querySelector("body").addEventListener("click", function (langSpecificBtn, langSpecificInput) {
   console.log("this should be something", event.target.id);
-  if (event.target.id === "french-btn") {
+  if (event.target.id === frenchBtn) {
     console.log("clickety click clack click");
-    if (document.querySelector("#french-input").value === "Hello" || document.querySelector("#french-input").value === "hello") {
+    if (document.querySelector(frenchInput).value === "Hello" || document.querySelector(frenchInput).value === "hello") {
       console.log(frenchData.dictionary.hello);
     }
   }
-
-  //  document.querySelector("#french-btn").addEventListener("click", function () {
-  // if ("#french-input" === "Hello" || "#french-input" === "hello") {
-  //  console.log(frenchData.dictionary.hello)
-});
+}
+)
